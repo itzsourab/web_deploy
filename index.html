@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+
+
+
+            background-color: rgb(253, 242, 236);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: rgb(253, 242, 236);
+            ;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav {
+            background-color: rgb(253, 242, 236);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav li {
+            margin: 13px 36px;
+
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            font-weight: lighter;
+            font-size: 16px;
+        }
+
+        .logo img {
+            width: 200px;
+            /* Adjust the image width as needed */
+            height: auto;
+        }
+
+        #button {
+            border: none;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: 20px;
+            height: 50px;
+            width: 160px;
+            margin-top: -16px;
+            background-color: white;
+
+
+
+        }
+
+        .container-top {
+            text-align: center;
+            margin-top: 60px;
+            /* border: 2px solid black; */
+            height: 500px;
+
+
+        }
+
+        .content {
+            background-color: #fff;
+            padding-top: 10px;
+            padding-bottom: 8px;
+
+
+            font-weight: bolder;
+            color: rgb(93, 26, 226);
+            width: 300px;
+            display: flex;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            /* Center vertically */
+            justify-content: center;
+            /* Center horizontally */
+            text-align: center;
+
+        }
+
+        .content-bold {
+            font-size: 75px;
+        }
+
+        .text-color {
+            color: coral;
+        }
+
+        .content-color {
+            color: rgb(118, 117, 117);
+
+        }
+
+        .button-content {
+            margin: 20px;
+            margin-top: 60px;
+            height: 50px;
+            width: 170px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: larger;
+        }
+
+        #button-content {
+            background-color: rgb(93, 26, 226);
+            color: #fff;
+        }
+
+        .container-2nd {
+            overflow: hidden;
+            /* Hide scrollbar */
+        }
+
+        .content-image {
+            width: 90%;
+            margin: auto;
+            /* Center horizontally */
+            transition: width 0.5s ease;
+            /* Add transition for smooth resizing */
+            text-align: center;
+            /* Center the image within the container */
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            /* Align inline with text-align center */
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            margin-top: -200px;
+
+        }
+
+        .flex-item {
+            width: 600px;
+            /* Adjust as needed */
+            background-color: #EDEDFA;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 20px;
+            border-radius: 40px;
+        }
+
+        .flex-item img {
+            max-width: 100%;
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Remove extra space below the image */
+            margin: auto;
+            /* Center the image horizontally */
+        }
+
+        .color-text-background {
+            background-color: #EDEDFA;
+            font-size: 50px;
+        }
+
+        .container-box {
+            display: flex;
+            margin-left: 100px;
+
+        }
+
+        .box {
+            flex: 1;
+            /* Equal width for each box; you can adjust this value as needed */
+            border: 1px solid #ccc;
+            padding: 0px;
+            box-sizing: border-box;
+            margin: 10px;
+            /* Adjust margin as needed */
+            border-radius: 30px;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Remove extra space below the image */
+            margin: auto;
+
+        }
+
+        .text-margin-padding {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container-middle-top {
+            margin-left: 200px;
+        }
+
+        .content-bold-middle {
+            background-color: black;
+            color: white;
+            font-size: 45px;
+
+        }
+
+        .content-middle {
+            background-color: #fff;
+            padding-top: 10px;
+            padding-bottom: 8px;
+            font-weight: bolder;
+            color: rgb(93, 26, 226);
+            width: 130px;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            /* Center vertically */
+            justify-content: center;
+            /* Center horizontally */
+            text-align: center;
+
+        }
+
+        .container-middle {
+            padding-top: 20px;
+            margin-top: 100px;
+            width: 100%;
+            background-color: black;
+
+        }
+
+        .box-middle {
+            display: inline-block;
+            width: 25%;
+            /* Adjust the width as needed */
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            /* margin: 30px;  */
+            margin-left: 80px;
+            height: 350px;
+            border-radius: 20px;
+            margin-top: 50px;
+
+        }
+
+        .box-middle-text {
+            color: rgb(118, 117, 117);
+            background-color: black;
+            text-align: center;
+        }
+
+        .content-bold-last {
+            font-size: 50px;
+            background-color: black;
+            color: #fff;
+        }
+
+        .last-image img {
+            height: 350px;
+            width: 45%;
+            margin-left: 400px;
+
+        }
+
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            border: 1px solid #ccc;
+
+            padding: 25px;
+            width: 700px;
+            margin-top: 30px;
+            border-radius: 10px;
+            font-size: x-large;
+            font-weight: 700
+        }
+
+        .accordion :hover {
+            color: purple;
+
+        }
+
+
+        .content-click {
+            display: none;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: large;
+
+
+        }
+
+        .container-click-end {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .content-last-element {
+            background-color: #fff;
+            padding-top: 10px;
+            padding-bottom: 8px;
+            font-weight: bolder;
+            color: rgb(93, 26, 226);
+            width: 60px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+
+        }
+
+        .content-bold-last-elem {
+            font-size: 75px;
+            background-color: rgb(253, 242, 236);
+            color: black;
+            text-align: start;
+
+        }
+        .container-inend {
+         display: flex;
+         margin-left: 80px;
+         
+        }
+
+        .box-inend{
+          /* flex: 1;  */
+         width: 30%;
+         border: 1px solid #ccc;
+         margin: 15px;
+         padding: 10px;
+         height: 400px;
+         margin-top: -130px;
+         border-radius: 20px;
+         padding: 30px;
+         
+         }
+        .head-free {
+            color: purple;
+            padding: 10px;
+            font-size: xx-large;
+                     
+        }
+        .dollar-sign{
+            font-size: 60px;
+        }
+         
+        .list-element{
+            font-size: larger;
+            margin: 20px;
+            font-weight:bold ;
+        }
+
+
+
+    .container-lastend {
+      display: flex;
+      border: 1px solid #ccc;
+      /* margin: 5px; */
+      height: 600px;
+      width: 80%;
+      margin: auto;
+      border-radius: 20px;
+      margin-top: 200px;
+    }
+
+    .box6 {
+      flex: 1;
+      padding: 10px;
+      
+    }
+
+    .box11 {
+      margin-right: 20px;
+    }
+
+    .box22 {
+     margin-left: 20px;
+    }
+    .container99 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top:100px ;
+    }
+
+    .card99 {
+      flex: 1;
+      min-width: 200px;
+      height: 300px;
+      border: 1px solid #ccc;
+      margin: 5px;
+      padding: 30px;
+      box-sizing: border-box;
+      border-radius: 20px;
+      
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+    }
+   .fotter-end{
+     display: flex ;
+     justify-content: space-between;     
+      border: 1px solid #ccc;
+      margin: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .container88 {
+      display: flex;
+      justify-content: space-between;
+      height: 500px;
+    }
+
+    .left-box,
+    .right-box {
+      width: 48%; /* Adjust as needed */
+   
+      margin: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="tgELERqZ0nObn14bTi418qTbg.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><button id="button">Buy Template</button></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <div class="container-top">
+        <p class="content">WELCOME TO MANAGE WISE!</p>
+        <h1 class="content-bold">Empower your business with<br> <span class="text-color">Strategic</span> insights</h1>
+        <h3 class="content-color">Powerful management platform designed to streamline your business<br> operations,
+            boost productivity, and drive success</h3>
+            <button class="button-content" id="button-content">GET started</button> <button class="button-content">watch demo</button>
+
+    </div>
+    <div class="container-2nd">
+        <div class="content-image" id="scroll-image">
+            <img src="t9qCSNfZSNdBCMSiohCGNEIl4.webp" alt="">
+        </div>
+    </div>
+    <div class="container-top">
+        <p class="content">PREMIER FEATURES!</p>
+        <h1 class="content-bold">Discover our product's<span class="text-color">Capabilities</span> </h1>
+        <h3 class="content-color">Don't settle for mediocrity - embrace the future of management<br> with Manage Wise.
+        </h3>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <!-- Content for the first flex item -->
+            <br>
+            <br>
+            <br>
+
+            <h1 class="color-text-background">Boost productivity and <br>streamline workflow with us. Enjoy our
+                intuitive interface and robust features.</h1>
+
+        </div>
+
+        <div class="flex-item">
+
+            <img class="image-2nd" src="qJeaFhSmQ29M1S55GRW5kYb4 (1).webp" alt="">
+            <h3>Smart Task Management</h3>
+            <P>Say goodbye to chaos with our smart task management system</P>
+        </div>
+    </div>
+    <div class="container-box">
+        <div class="box">
+            <img src="LFrHT3kBfxtMGAZfWkyLvYAKsbg.webp" alt="">
+            <h2 class="text-margin-padding">Flexible Scheduling</h2>
+            <p class="text-margin-padding">Stay productive with our flexible<br> scheduling system</p>
+        </div>
+
+        <div class="box">
+            <img src="p65qwfjd0cd0ZHZoNFpsh7XU.webp" alt="">
+            <h2 class="text-margin-padding">Easy Communication</h2>
+            <p class="text-margin-padding">Collaborate seamlessly with your team <br>in real-time</p>
+        </div>
+
+        <div class="box">
+            <img src="FaY6aekE67ytWg6HDfDpy2FaHY.webp" alt="">
+            <h2 class="text-margin-padding">Analytics</h2>
+            <p class="text-margin-padding">Gain valuable insights with our advanced <br>analytics feature
+
+            </p>
+        </div>
+    </div>
+    <div class="container-middle">
+        <div class="container-middle-top">
+            <p class="content-middle">AND MORE</p>
+            <h1 class="content-bold-middle">Explore an array of features that elevate your <br><span class="text-color">
+                    Productivity</span> to new heights</h1>
+            <h3 class="content-color">Discover the tools that will revolutionize the way you<br> manage and optimize
+                your operationss</h3>
+
+        </div>
+        <div class="box-middle">
+            <img src="" alt="">
+            <h2 class="box-middle-text">Cross-platform Compatibility</h2>
+            <p class="box-middle-text">Enjoy the flexibility of cross-platform compatibility. Our product works
+                seamlessly across desktop, web, and mobile devices, allowing you to work from your preferred device.</p>
+        </div>
+
+        <div class="box-middle">
+            <img src="" alt="">
+            <h2 class="box-middle-text">Stay Informed with Essential Notifications</h2>
+            <p class="box-middle-text">Automate support from first customer contact to closing the ticket. Drastically
+                improve time to resolution.Automate support from first customer contact to closing the ticket.</p>
+        </div>
+
+        <div class="box-middle">
+            <img src="" alt="">
+            <h2 class="box-middle-text">Secure Data Encryption at all times</h2>
+            <p class="box-middle-text">Trust in our robust data encryption to keep your sensitive information safe and
+                secure. Rest easy knowing your data is protected at all times.</p>
+        </div>
+        <div class="container-top">
+            <p class="content">INTEGRATION!</p>
+            <h1 class="content-bold-last">Enable <span class="text-color">INTEGRATION</span> with other popular
+                <br>tools and platforms</h1>
+            <h3 class="content-color">Seamlessly connect and amplify your workflow by<br> enabling integration with a
+                diverse array of widely-<br>used tools and platforms</h3>
+
+        </div>
+        <div class="last-image">
+            <img src="sQd7MkwgkdQRRQ1a99k5Z1zLfA.webp" alt="">
+
+
+        </div>
+
+
+    </div>
+    <div class="container-click-end">
+        <div class="container-top">
+            <p class="content-last-element">FAQ</p>
+            <h1 class="content-bold-last-elem">Need<span class="text-color"><br>Answers ?</span> </h1>
+            <h3 class="content-color">Seamlessly connect and amplify your workflow by<br> enabling integration with a
+                diverse array of widely-<br>used tools and platforms</h3>
+
+        </div>
+        <div>
+            <div class="accordion" onclick="toggleContent('element1')">
+                <div class="title">What is Manage Wise and what does it offer?</div>
+                <div class="content-click" id="element1">
+                    <!-- Content for Element 1 goes here -->
+                    manage wsie is a comprehensive management platform designed to streamline your business
+                    operation,enhance productivity
+                </div>
+            </div>
+
+            <div class="accordion" onclick="toggleContent('element2')">
+                <div class="title">Is Manage Wise suitable for small business and larger enterprises alike?</div>
+                <div class="content-click" id="element2">
+                    <!-- Content for Element 2 goes here -->
+                    Yes, manage wise is designed to cater to the needs of both small business and larger enterprises .
+                </div>
+            </div>
+
+            <div class="accordion" onclick="toggleContent('element3')">
+                <div class="title">Can i access Manage Wise from different devices and platforms?</div>
+                <div class="content-click" id="element3">
+                    <!-- Content for Element 3 goes here -->
+                    yes,manage wise offers cross-platform compatibililty,allowing you to access and use the platform
+                    seamlesssly on desktops
+                </div>
+            </div>
+
+            <div class="accordion" onclick="toggleContent('element4')">
+                <div class="title">What kind of support option do you have offer to users?</div>
+                <div class="content-click" id="element4">
+                    <!-- Content for Element 4 goes here -->
+                    yes,manage wise offers cross platform allowing you to acess and use the platform
+                </div>
+            </div>
+
+            <div class="accordion" onclick="toggleContent('element5')">
+                <div class="title">How secure is the data stored within Manage Wise?</div>
+                <div class="content-click" id="element5">
+                    <!-- Content for Element 5 goes here -->
+                    we provide responsive customer via chat and email to assist you with any inquiries,issues or
+                    guidance you may need while manage wise
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-top">
+        <p class="content">PRICING</p>
+        <h1 class="content-bold">Select your ideal <span class="text-color">pricing</span> plan</h1>
+        <h3 class="content-color">At Manage Wise, we believe in providing you with <br>pricing plans that adapt to your unique needs.</h3>
+
+
+    </div>
+
+    <div class="container-inend">
+        <div class="box-inend">
+         <span class="head-free">FREE</span><br><br>
+         <span class="dollar-sign">$0</span><span>/month</span><br><br>
+         <l1 class="list-element">*Access to all basic features</l1><br><br>
+         <l1 class="list-element">*Reporting and analytics</l1><br><br>
+         <l1 class="list-element">*up to 5 individual users</l1><br><br>
+         <l1 class="list-element">*Chat and email support</l1><br>
+         <button class="button-content" id="button-content">GET started</button>
+     
+      
+        </div>
+    
+        <div class="box-inend" style="background-color: black; color: #fff;">
+            <span class="head-free">STANDARD</span><br><br>
+            <span class="dollar-sign">$25</span><span>/month</span><br><br>
+            <l1 class="list-element">Access to all basic features</l1><br><br>
+            <l1 class="list-element"> Reporting and analytics</l1><br><br>
+            <l1 class="list-element"> Chat and email support</l1><br><br>
+            <l1 class="list-element"> 3+ integrations</l1><br>
+            
+            
+            <button class="button-content" id="button-content">GET started</button>
+          
+        </div>
+    
+        <div class="box-inend">
+            <span class="head-free">BUSINESS</span><br><br>
+            <span class="dollar-sign">$42</span><span>/month</span><br><br>
+            <l1 class="list-element">Access to all basic features</l1><br><br>
+            <l1 class="list-element"> Reporting and analytics</l1><br><br>
+            <l1 class="list-element"> up to 5 individual users</l1><br><br>
+            <l1 class="list-element">Chat and email support</l1><br>
+            <button class="button-content" id="button-content">GET started</button>
+            
+        </div>
+      </div>
+
+    <div style="margin-top: 100px;" class="container-middle-top">
+        <p class="content-middle">TESTIMONIALS</p>
+        <h1 class="content-bold-last-end">Hear from our  <span class="text-color"> Satisfied</span>  clients</h1>
+        <h3 class="content-color">Discover why our clients love working with us. Read their<br> testimonials and learn how we has helped businesses.</h3>
+       
+    </div>
+    <div class="container99">
+        <div class="card99">
+          <h3>"I can't imagine running my business without this product. The automation features have saved me hours of manual work, allowing me to focus on strategic tasks.</h3>
+          <img  style="height: 70px;" src="PIlOZWlmobm4uLtBhKFfw7HS4.webp" alt="">
+        </div>
+    
+        <div class="card99">
+          <!-- Content for card 2 goes here -->
+          <h3>"I can't imagine running my business without this product. The automation features have saved me hours of manual work, allowing me to focus on strategic tasks.</h3>
+          <img  style="height: 70px;" src="PIlOZWlmobm4uLtBhKFfw7HS4.webp" alt="">
+        </div>
+    
+        <div class="card99">
+          <!-- Content for card 3 goes here -->
+          <h3>"I can't imagine running my business without this product. The automation features have saved me hours of manual work, allowing me to focus on strategic tasks.</h3>
+          <img  style="height: 70px;" src="PIlOZWlmobm4uLtBhKFfw7HS4.webp" alt="">
+        </div>
+    
+        <div class="card99">
+          <!-- Content for card 4 goes here -->
+          <h3>"I can't imagine running my business without this product. The automation features have saved me hours of manual work, allowing me to focus on strategic tasks.</h3>
+          <img  style="height: 70px;" src="PIlOZWlmobm4uLtBhKFfw7HS4.webp" alt="">
+        </div>
+      </div>
+    <div class="container-lastend">
+        <div class="box6 box11">
+            <div class="container-top">
+                <p style="width: 150px;"  class="content-last-element">DON'T MISS OUT</p>
+                <h1 class="content-bold-last-elem">Unleash your<span class="text-color"><br>Potential<br></span>with us </h1>
+                <h3 style="text-align: start;"; class="content-color">Join our community of ambitious <br>individuals and organizations eager to<br> make a difference. </h3>
+                <button class="button-content" id="button-content">Try out now</button>
+            </div>
+          
+        </div>
+    
+        <div class="box6 box22">
+        <img src="584hzJDnWCS5SFABKjaCzgDspY.webp" alt="">
+          
+        </div>
+      </div>
+
+    
+      <div class="container88">
+        <div style="padding: 80px;" class="left-box">
+          <!-- Content for the left box goes here -->
+          <img style="height: 80px;" src="tgELERqZ0nObn14bTi418qTbg.png" alt="">
+        </div>
+    
+        <div style='text-align: end; padding: 80px;'class="right-box">
+          <!-- Content for the right box goes here -->
+          <l1>Features</l1><br><br>
+          <l1>FAQ</l1><br><br>
+          <l1>Pricing</l1><br><br>
+          <l1>Testimonials</l1><br><br>
+        </div>
+      </div>       
+      
+      <div style=" margin: 50px;">&copy;   2022 ManageWise, Inc.</div>
+    
+    <script>
+        function toggleContent(elementId) {
+            var content = document.getElementById(elementId);
+            content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>
