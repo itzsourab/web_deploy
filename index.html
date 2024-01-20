@@ -468,6 +468,70 @@
 
 
     }
+         @media screen and (max-width: 414px) and (max-height: 819px) {
+        body {
+            font-size: 14px; /* Adjust font size as needed */
+            width: 100%;
+        }
+
+        nav li {
+            margin: 10px 18px; /* Adjust margins as needed */
+        }
+
+        .logo img {
+            width: 150px; /* Adjust image width as needed */
+        }
+
+        .container-top {
+            margin-top: 60px;
+            margin-bottom: 500px; /* Adjust margin as needed */
+        }
+        .container-2nd{
+            display: none;
+        }
+        .flex-container{
+            display: none;
+        }
+        .container-middle{
+            display: none;
+        }
+        .container-middle-top{
+            left: 50px;
+        }
+    }
+    @media screen and (max-width: 819px) {
+            .menu-icon{
+                display: block;
+                color: rgb(255,127,80);
+                display: flex;
+                margin-right: -80px ;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 100px;
+                width: 50%;
+                /* background-color: #555; */
+                z-index: 1;
+                /* background: #ccc; */
+            }
+
+            nav ul.show {
+                display:flex;
+                
+            }
+
+            nav li {
+                text-align: center;
+                margin: 10px 0;
+            }
+            .box-inend{
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -762,6 +826,14 @@
             var content = document.getElementById(elementId);
             content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
         }
+         function toggleMenu() {
+        var navList = document.querySelector('nav ul');
+        navList.classList.toggle('show');
+        function showAlert() {
+            alert("Open this link in laptop for better experience");
+        }
+        showAlert()
+        
     </script>
 </body>
 
